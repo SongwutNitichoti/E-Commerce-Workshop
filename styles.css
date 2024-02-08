@@ -7,6 +7,7 @@
 
 body{
   background-color: #181717;
+  color: rgba(233, 233, 233, 0.863);
 }
 
 div.logo img{
@@ -16,6 +17,7 @@ div.logo img{
 
 div.logo h2{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }
 
 div.search input.search-input{
@@ -27,6 +29,11 @@ div.search input.search-input{
 
 div.search input.search-btn{
  display: none;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
 }
 
 div.info{
