@@ -37,10 +37,29 @@ form {
 }
 
 div.info{
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+ 
+}
+
+div.info  div.info-item img{
+  width: 100%;
+  height: 460px;
+  max-height: 460px;
 }
 
 @media screen and (max-width : 680px) {
+  div.info{
+    width: 100%;
+    height: 50%;
+    max-width: 500px;
    
+  }
+  
+  div.info  div.info-item img{
+    width: 100%;
+    height: 460px;
+    max-height: 460px;
+  }
 }
