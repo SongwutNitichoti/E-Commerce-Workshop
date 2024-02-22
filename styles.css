@@ -1,133 +1,43 @@
-html {
-  scroll-behavior: smooth;
-}
-
-* {
+*{
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   margin: 0px;
   padding: 0px;
-  color: #fff;
 }
 
-body {
-  background-color: #3b3838;
-  color: rgba(233, 233, 233, 0.863);
+body{
+  background-image: url("https://i.pinimg.com/564x/19/8f/42/198f427f54234e4ce1bbd33a56deb62d.jpg");
 }
 
+div.web-container{
+  
+  display: grid;
+grid-template-areas:
+  ' header header header header header header'
+  ' nav nav nav nav nav nav'
+  ' main main main main main main'
+  ' footer footer footer footer footer footer';
 
-div.header-content {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-div.header-content-item {
-  width: 75%;
-}
-
-div.logo img {
-  width: 50%;
-  height: 80px;
-}
-
-div.logo h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-
-
-form {
-  display: block;
-  margin-top: 0em;
-  width: 430px;
 
 }
 
-form input {
-  color: black;
-  width: 100%;
+header{
+  grid-area: header;
+  background-color: red;
 }
 
-form button {
-  position: relative;
-  right: 45px;
+nav{
+  grid-area: nav;
+  background-color: blue;
 }
 
-div.info {
-  width: 100%;
-  height: 100%;
-  max-width: 900px;
-  cursor: pointer;
-
-}
-
-div.info div.info-item img {
-  width: 100%;
-  height: 524px;
-  max-height: 900px;
-  object-fit: cover;
-}
-
-.news .news-item {
-  cursor: pointer;
-}
-
-img.product{
-  height: 100%;
-  width: 100%;
-}
-
-.best-seller {
-  width: 100%;
-}
-
-.best-seller .seller-title {
-  width: 75%;
-
-}
-
-.best-seller .seller-title .item-title {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 34px;
-}
-
-.game-card {
-  width: 75%;
-}
-
-.card-text{
-  color : black;
+main{
+  grid-area: main;
+  
 }
 
 footer{
-  background-color: rgba(68, 66, 66, 0.808);
-  width: 100%;
-}
-
-footer div.footer-item{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-footer div.footer-item .item{
-  width: 75%;
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width : 680px) {
-  div.info {
-    width: 100%;
-    height: 50%;
-    max-width: 500px;
-
-  }
-
-  div.info div.info-item img {
-    width: 100%;
-    height: 460px;
-    max-height: 460px;
-  }
+  grid-area: footer;
+  background-color: blueviolet;
 }
